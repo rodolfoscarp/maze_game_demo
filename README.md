@@ -1,49 +1,77 @@
-# Phaser 3 Webpack Project Template
+# Nome do produto
+> Descrição curta sobre o que seu projeto faz.
 
-A Phaser 3 project template with ES6 support via [Babel 7](https://babeljs.io/) and [Webpack 4](https://webpack.js.org/) that includes hot-reloading for development and production-ready builds.
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
-This has been updated for Phaser 3.50.0 version and above.
+De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 
-Loading images via JavaScript module `import` is also supported, although not recommended.
+![](../header.png)
 
-## Requirements
+## Instalação
 
-[Node.js](https://nodejs.org) is required to install dependencies and run scripts via `npm`.
+OS X & Linux:
 
-## Available Commands
+```sh
+npm install my-crazy-module --save
+```
 
-| Command | Description |
-|---------|-------------|
-| `npm install` | Install project dependencies |
-| `npm start` | Build project and open web server running project |
-| `npm run build` | Builds code bundle with production settings (minification, uglification, etc..) |
+Windows:
 
-## Writing Code
+```sh
+edit autoexec.bat
+```
 
-After cloning the repo, run `npm install` from your project directory. Then, you can start the local development server by running `npm start`.
+## Exemplo de uso
 
-After starting the development server with `npm start`, you can edit any files in the `src` folder and webpack will automatically recompile and reload your server (available at `http://localhost:8080` by default).
+Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado. Adicione blocos de códigos e, se necessário, screenshots.
 
-## Customizing the Template
+_Para mais exemplos, consulte a [Wiki][wiki]._ 
 
-### Babel
+## Configuração para Desenvolvimento
 
-You can write modern ES6+ JavaScript and Babel will transpile it to a version of JavaScript that you want your project to support. The targeted browsers are set in the `.babelrc` file and the default currently targets all browsers with total usage over "0.25%" but excludes IE11 and Opera Mini.
+Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
 
- ```
-"browsers": [
-  ">0.25%",
-  "not ie 11",
-  "not op_mini all"
-]
- ```
+```sh
+make install
+npm test
+```
 
-### Webpack
+## Histórico de lançamentos
 
-If you want to customize your build, such as adding a new webpack loader or plugin (i.e. for loading CSS or fonts), you can modify the `webpack/base.js` file for cross-project changes, or you can modify and/or create new configuration files and target them in specific npm tasks inside of `package.json'.
+* 0.2.1
+    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
+* 0.2.0
+    * MUDANÇA: Remove `setDefaultXYZ()`
+    * ADD: Adiciona `init()`
+* 0.1.1
+    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
+* 0.1.0
+    * O primeiro lançamento adequado
+    * MUDANÇA: Renomeia `foo()` para `bar()`
+* 0.0.1
+    * Trabalho em andamento
 
-## Deploying Code
+## Meta
 
-After you run the `npm run build` command, your code will be built into a single bundle located at `dist/bundle.min.js` along with any other assets you project depended. 
+Seu Nome – [@SeuNome](https://twitter.com/...) – SeuEmail@exemplo.com
 
-If you put the contents of the `dist` folder in a publicly-accessible location (say something like `http://mycoolserver.com`), you should be able to open `http://mycoolserver.com/index.html` and play your game.
+Distribuído sob a licença XYZ. Veja `LICENSE` para mais informações.
+
+[https://github.com/yourname/github-link](https://github.com/othonalberto/)
+
+## Contributing
+
+1. Faça o _fork_ do projeto (<https://github.com/yourname/yourproject/fork>)
+2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
+3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
+4. _Push_ (`git push origin feature/fooBar`)
+5. Crie um novo _Pull Request_
+
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/seunome/seuprojeto/wiki
